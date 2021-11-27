@@ -1,0 +1,33 @@
+/* You can add global styles to this file, and also import other style files */
+:root{
+  --dark: #011627;
+  --bright: #ECFFCC;
+  --primary: #136F63;
+  --danger: #e82020;
+  --warning: #ffcc00;
+  --super_dark: #00080f;
+  --secondary: #02b366;
+}
+
+.text-light{
+  color: var(--bright) !important;
+}
+
+.bg-dark{
+  background-color: var(--dark) !important;
+}
+
+.btn-primary{
+  background-color: var(--primary) !important;
+  border-color: var(--primary) !important;
+}
+
+.btn-danger{
+  background-color: var(--danger) !important;
+}
+.btn-warning{
+  background-color: var(--warning) !important;
+}
+body{
+  background-color: var(--super_dark) !important;
+}

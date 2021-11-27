@@ -1,0 +1,18 @@
+<div class="content container">
+    <div class="mb-3 row card bg-dark text-light">
+        <h3>Crear Cuenta</h3>
+        <form [formGroup]="form" (ngSubmit)="submitForm()">
+            <div class="col-sm-10">
+                <label for="inputPassword" class="col-sm-2 col-form-label">Nombre de la cuenta</label>
+                <input type="text" [formControlName]="'name'"/>
+            </div>
+            <div class="col-sm-10">
+                <label for="inputPassword" class="col-sm-2 col-form-label">Tipo de cuenta</label>
+                <input class="text" type="text" [formControlName]="'type'"/>
+            </div>
+
+            <button type="submit">Iniciar</button>
+
+        </form>
+      </div>
+</div>

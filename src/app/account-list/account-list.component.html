@@ -1,0 +1,14 @@
+<div class="container">
+    <ul class= "card-columns">
+        <li class= "card bg-dark text-light m-2 p-2" *ngFor="let account of accounts">
+          <div>
+            <div class= "card-title"><h3>{{ account.name }} / {{ account.type }}</h3></div>
+            <ul class="card-text">
+                <li>Balance: {{ account.balance }} </li>
+                <li><button class="btn btn-primary" type="button" (click)="seeAccount(account.id)">Más Información</button></li>
+                <!-- <li><a href="/accounts/{{ account.id }}">Más Información</a></li> -->
+            </ul>
+          </div>
+        </li>
+    </ul>
+</div>

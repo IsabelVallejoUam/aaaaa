@@ -1,0 +1,26 @@
+<div class="container-fluid">
+    <ul class= "card-columns">
+        <li class= "card bg-dark text-light m-2 p-2" *ngFor="let transaction of transactions">
+            <div class= "card-title"><h3>
+              {{ transaction.category }}
+            </h3></div>
+            <ul class="card-text">
+                <li>Cantidad: {{ transaction.ammount }} </li>
+                <li>Destino: {{ transaction.destination }}</li>
+                <li>{{ transaction.comment }} </li>
+                <li><button class="btn btn-primary" type= "button" (click)="seeTransaction(transaction.id)">Más Información</button></li>
+                <!-- <li><a href="/transactions/{{ transaction.id }}">Más Información</a></li> -->
+            </ul>
+        </li>
+        <!-- <li class= "card bg-dark text-light m-2 p-2">
+            <div class= "card-title"><h3>Transacción de Prueba</h3></div>
+            <ul class="card-text">
+                <li>Cantidad: 2 </li>
+                <li>Destino: 123131</li>
+                <li>Hola mucho gusto </li>
+                <li><a href="/transactions/2">Más Información</a></li>
+            </ul>
+        </li> -->
+
+    </ul>
+</div>
